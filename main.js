@@ -6,6 +6,18 @@ document.addEventListener('DOMContentLoaded', function () {
             clientX,
             clientY
         } = e;
-        console.log(clientX, clientY)
+        const centerX = window.innerWidth / 2;
+        const centerY = window.innerHeight / 2;
+        // console.log(clientX, clientY);
+        elements.forEach(element => {
+
+            const ratioX = -element.getAttribute('ratioX');
+            const ratioY = -element.getAttribute('ratioY');
+
+            const moveX = clientX - centerX;
+            const moveY = clientY - centerY;
+
+            element.style.transform = `translate(${moveX *ratioX}px,${moveY*ratioY}px)`;
+        })
     })
 })
