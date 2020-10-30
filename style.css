@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    position: relative;
+    background-color: rgb(198, 225, 241);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fly-cloud {
+    position: absolute;
+    width: 15%;
+}
+
+.fly-balloon {
+    position: absolute;
+    width: 40%;
+    top: 25%;
+    left: 35%;
+}
+
+.fly-cloud:nth-last-child(1) {
+    top: 23%;
+    left: 10%;
+}
+
+.fly-cloud:nth-last-child(2) {
+    top: 58%;
+    left: 20%;
+}
+
+.fly-cloud:nth-last-child(3) {
+    top: 47%;
+    left: 33%;
+}
+
+.fly-cloud:nth-last-child(4) {
+    top: 22%;
+    left: 28%;
+    z-index: 1;
+}
+
+.fly-cloud:nth-last-child(5) {
+    top: 9%;
+    left: 57%;
+}
+
+.fly-cloud:nth-last-child(6) {
+    top: 75%;
+    left: 40%;
+    z-index: 1;
+}
